@@ -41,7 +41,7 @@
 
             context.AccountTypes.AddOrUpdate(new AccountType[]
             {
-            
+
                new AccountType
                {
                    ID = 1, TypeName = "Current", Conditions = "current Account terms and cnditions apply"
@@ -59,41 +59,47 @@
             context.SaveChanges();
 
 
-
+ 
             context.Accounts.AddOrUpdate(new Account[]
            {
+             
+                new Account
+                {
+                    ID = 1 ,
+                    AccountName = "Current 1" ,
+                    InceptionDate = DateTime.Now,
+                    CustomerID =  1,
+                    CurrentBalance =  0f,
+                    AccountTypeID = 1,
+                },
 
-              new Account
-              {
-                  ID = 1 , AccountName = "Current 1" , InceptionDate = DateTime.Parse("12/01/2002"),
-                  CustomerID = 1,CurrentBalance =  30000f, AccountTypeID = 1
-              },
-              new Account
-              {
-                  ID = 2 , AccountName = "Current 2" , InceptionDate = DateTime.Parse("31/10/2004"),
-                  CustomerID = 1,CurrentBalance =  20000f, AccountTypeID = 1
-              },
+
+                //new Account
+                //{
+                //    ID = 2 , AccountName = "Current 2" , InceptionDate = DateTime.Parse("31/10/2004"),
+                //    CustomerID = 1,CurrentBalance =  20000f, AccountTypeID = 1
+                //},
 
 
-           }) ;
+           });
             context.SaveChanges();
 
-            context.Transactions.AddOrUpdate(new Transaction[]
-          {
-              new Transaction
-              {
-                  ID = 1 ,TransactionType = Transaction.TransactionTypeSource.Lodgement , 
-                  Amount = 300f, TransactionDate = DateTime.Now,AccountID = 1
-              },
-              new Transaction
-              {
-                  ID = 2 ,TransactionType = Transaction.TransactionTypeSource.Widthdrawal ,
-                  Amount = 500f, TransactionDate = DateTime.Now,AccountID = 1
-              }
+            //  context.Transactions.AddOrUpdate(new Transaction[]
+            //{
+            //    new Transaction
+            //    {
+            //        ID = 1 ,TransactionType = Transaction.TransactionTypeSource.Lodgement , 
+            //        Amount = 300f, TransactionDate = DateTime.Now,AccountID = 1
+            //    },
+            //    new Transaction
+            //    {
+            //        ID = 2 ,TransactionType = Transaction.TransactionTypeSource.Widthdrawal ,
+            //        Amount = 500f, TransactionDate = DateTime.Now,AccountID = 1
+            //    }
 
 
-          });
-            context.SaveChanges();
+            //});
+            //  context.SaveChanges();
         }
     }
 }

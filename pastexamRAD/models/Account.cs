@@ -18,13 +18,13 @@ namespace pastexamRAD.models
 
         public DateTime InceptionDate { get; set; }
 
-        [ForeignKey("CustomersID")]
-        public int CustomerID { get; set; }
+       // [ForeignKey("CustomersID")]
+       public int CustomerID { get; set; }
 
         public float CurrentBalance { get; set; }
 
         public int AccountTypeID { get; set; }
 
-        public virtual Account CustomersID { get; set; }
+       //public virtual Customer CustomersID { get; set; }
     }
 }

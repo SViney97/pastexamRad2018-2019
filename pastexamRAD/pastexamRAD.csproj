@@ -64,6 +64,22 @@
     <Compile Include="Migrations\202101071846516_3nd Migration .designer.cs">
       <DependentUpon>202101071846516_3nd Migration .cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101111423415_4th migration.cs" />
+    <Compile Include="Migrations\202101111423415_4th migration.designer.cs">
+      <DependentUpon>202101111423415_4th migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101111430537_5th migration.cs" />
+    <Compile Include="Migrations\202101111430537_5th migration.designer.cs">
+      <DependentUpon>202101111430537_5th migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101111445498_7th migration.cs" />
+    <Compile Include="Migrations\202101111445498_7th migration.designer.cs">
+      <DependentUpon>202101111445498_7th migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101111453241_8th migration.cs" />
+    <Compile Include="Migrations\202101111453241_8th migration.designer.cs">
+      <DependentUpon>202101111453241_8th migration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="models\Account.cs" />
     <Compile Include="models\AccountType.cs" />
@@ -85,6 +101,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101071846516_3nd Migration .resx">
       <DependentUpon>202101071846516_3nd Migration .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101111423415_4th migration.resx">
+      <DependentUpon>202101111423415_4th migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101111430537_5th migration.resx">
+      <DependentUpon>202101111430537_5th migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101111445498_7th migration.resx">
+      <DependentUpon>202101111445498_7th migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101111453241_8th migration.resx">
+      <DependentUpon>202101111453241_8th migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
